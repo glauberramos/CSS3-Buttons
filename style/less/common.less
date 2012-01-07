@@ -1,0 +1,73 @@
+@import "elements.less";
+
+#buttons {
+	width: 820px;
+	height: 1200px;
+	background-color: white;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	border: 2px solid #555;
+	box-shadow: #555 1px 1px 5px;
+	
+	div {
+		float: left;
+	}
+	
+	#first-container {
+		background: url("style/img/bg3.png");
+		padding-bottom: 15px;
+		border-bottom: 1px solid #555;
+		border-top: 1px solid white;
+		border-radius: 5px 5px 0 0;
+		
+		input {
+			float: left;
+			margin: 15px;
+			margin-bottom: 0;
+		}
+	}
+
+	#second-container {
+		background: grey;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #555;
+		border-top: 1px solid #bbb;
+		
+		input {
+			float: left;
+			margin: 15px;
+			margin-bottom: 0;
+		}
+		
+		.button {
+			margin: 20px 27px 0 27px !important;
+			.rounded(30px);
+			width: 150px;
+			border: 0 none;
+			font-size: 1.8em;
+		}
+	}
+	
+	.button {
+		width: 175px;
+		height: 60px;
+		text-align: center;
+		border-radius: 5px;
+		font-size: 1.4em;
+		outline: 0 none;
+		cursor: pointer;
+		color: #555;
+	}
+	
+	.button[disabled] {
+		opacity: .5;
+		cursor: default;
+		color: rgba(0, 0, 0, 0.2) !important;
+		text-shadow: none !important;
+		background-color: rgba(0, 0, 0, 0.05);
+		background-image: none;
+		-webkit-box-shadow: inset rgba(255,254,255,0.4) 0 0.3em .3em, inset rgba(0,0,0,0.1) 0 -0.1em .3em, rgba(0,0,0,0.3) 0 .1em 1px, rgba(0,0,0,0.2) 0 .2em 6px;
+		box-shadow: inset rgba(255,254,255,0.4) 0 0.3em .3em, inset rgba(0,0,0,0.1) 0 -0.1em .3em, rgba(0,0,0,0.3) 0 .1em 1px, rgba(0,0,0,0.2) 0 .2em 6px;
+	}
+}
